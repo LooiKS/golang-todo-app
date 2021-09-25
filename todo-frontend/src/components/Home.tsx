@@ -55,7 +55,7 @@ function Home() {
     if (todoTitle !== "") {
       createTodo(todoTitle).then((res) => {
         let t: Todo = res.data;
-        setTodos([t, ...todos]);
+        refresh();
         setTodoTitle("");
       });
     }
