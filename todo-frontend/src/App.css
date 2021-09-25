@@ -1,0 +1,3 @@
+.todo-card:not(:hover) .action-button {
+  display: none !important;
+}

@@ -1,0 +1,67 @@
+POST http://localhost:8080/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Monday Tasks"
+}
+
+###
+
+GET http://localhost:8080/todos HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/todos/2 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:8080/todos/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "hi123",
+    "title1": "hi"
+}
+###
+
+DELETE http://localhost:8080/todos/1 HTTP/1.1
+Content-Type: application/json
+
+### TODO ITEMS
+
+POST http://localhost:8080/todo-items HTTP/1.1
+Content-Type: application/json
+
+{
+    "todoId": 2,
+    "title": "Study Golang"
+}
+
+###
+
+GET http://localhost:8080/todo-items HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/todo-items/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:8080/todo-items/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "hi123",
+    "done": "true"
+}
+###
+
+DELETE http://localhost:8080/todo-items/3 HTTP/1.1
+Content-Type: application/json
+
+###
+
